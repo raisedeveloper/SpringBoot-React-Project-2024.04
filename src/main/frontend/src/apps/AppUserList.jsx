@@ -6,7 +6,6 @@ import '../App.css';
 function App() {
   const [users, setUsers] = useState([]);
 
-
   useEffect(() => {
     axios.get('/rp/react/user')
       .then(res => setUsers(res.data))
